@@ -1,0 +1,18 @@
+get the api key in kaggle
+a file would be downloaded
+upload the file in directory
+then run in the commands
+
+
+mkdir -p ~/.kaggle
+mv kaggle.json ~/.kaggle/   # to move the file to that directory
+cp kaggle.json ~/.kaggle/   # to copy the file to that directory
+
+then click on copy api command
+paste it along with ! in the beginning as it is a command
+file will start to download
+#a new zip file would be formed
+  import zipfile
+  zip_ref=zipfile.Zipfile('filename','r')
+  zip_ref.extractall('/content')   # content is no file location so use it as it is
+  zip_ref.close()
